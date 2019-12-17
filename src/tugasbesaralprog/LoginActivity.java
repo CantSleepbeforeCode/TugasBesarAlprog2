@@ -17,11 +17,11 @@ import javax.swing.JOptionPane;
 public class LoginActivity extends javax.swing.JFrame {
     
 //    {"username", "password", "level"}
-    private static String[][] user = {{"user1", "1", "admin"},
-        {"user2", "2", "employee"},
-        {"user3", "3", "employee"},
-        {"user4", "4", "employee"},
-        {"user5", "5", "employee"}};
+    private static String[][] user = {{"Si Boss", "1", "admin"},
+        {"Jamal", "1", "employee"},
+        {"Dobleh", "1", "employee"},
+        {"Kabur", "1", "employee"},
+        {"Alung", "1", "employee"}};
     
     public LoginActivity() {
         initComponents();
@@ -57,6 +57,7 @@ public class LoginActivity extends javax.swing.JFrame {
         sepPassword = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(74, 232, 169));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -74,6 +75,8 @@ public class LoginActivity extends javax.swing.JFrame {
         jLabel2.setText("Cepat. Handal. Terpercaya");
         jLabel2.setToolTipText("");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 440, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 506, 680));
 
         jPanel2.setBackground(new java.awt.Color(43, 43, 40));
         jPanel2.setForeground(new java.awt.Color(102, 102, 102));
@@ -124,24 +127,7 @@ public class LoginActivity extends javax.swing.JFrame {
         sepPassword.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.add(sepPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 400, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 680, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 530, 680));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

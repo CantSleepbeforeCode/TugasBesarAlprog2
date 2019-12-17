@@ -267,7 +267,7 @@ public class LandingEmployeeActivity extends javax.swing.JFrame {
 
         PaneNav.add(jPanelNav5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 310, 70));
 
-        getContentPane().add(PaneNav, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 700));
+        getContentPane().add(PaneNav, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 680));
 
         PaneHeader.setBackground(new java.awt.Color(74, 232, 169));
         PaneHeader.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
