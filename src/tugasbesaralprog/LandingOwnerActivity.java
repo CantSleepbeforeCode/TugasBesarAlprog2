@@ -409,7 +409,9 @@ public class LandingOwnerActivity extends javax.swing.JFrame {
             benefit += Double.parseDouble(temp);
         }
         
-        lbl_benefit.setText(String.format("%s %s", lbl_benefit.getText(), indonesianCurrency(benefit)));
+        if(lbl_benefit.getText().length() == 30) {
+            lbl_benefit.setText(String.format("%s %s", lbl_benefit.getText(), indonesianCurrency(benefit)));
+        }
     }
     
     public void showDataKaryawan() {
